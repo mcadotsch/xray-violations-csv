@@ -15,12 +15,12 @@ const ORDER_BY = process.env.ORDER_BY || '';
 
 const LIMIT = process.env.LIMIT || '250';
 const OFFSET = process.env.OFFSET || '0';
-const ARTIFACTS = process.env.ARTIFACTS || '<path>/<image>/<tag>/;<path>/<image>/<tag>/';
+const ARTIFACTS_WHITELIST = process.env.ARTIFACTS_WHITELIST || '<path>/<image>/<tag>/;<path>/<image>/<tag>/';
 
 var offset = Number(OFFSET);
 var limit = Number(LIMIT);
 var violationList = [];
-var artifacts = ARTIFACTS.toString().split(';');
+var artifacts = ARTIFACTS_WHITELIST.toString().split(';');
 
 function violationRequest() {
     offset++
@@ -75,7 +75,7 @@ function violationRequest() {
                     if(violationList.length > 0) {
                         issueRequest(violationList)
                     }else{
-                        console.log('...nothing found')
+                        console.log('...nothing found, probably the artifact_whitelist is not configured')
                     }
                 }
             }
