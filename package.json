@@ -1,0 +1,20 @@
+{
+  "name": "xray-violations-csv",
+  "version": "1.0.0",
+  "description": "xray-violations-csv is a node.js app which fetches all violation details from a xray watch configured in jfrog and saves it to a comma separated CSV file.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mcadotsch@github.com/mcadotsch/xray-violations-csv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcadotsch/xray-violations-csv/issues"
+  },
+  "homepage": "https://github.com/mcadotsch/xray-violations-csv#readme"
+}
