@@ -15,6 +15,5 @@ MIN_SEVERITY="High"
 CREATED_FROM="2020-01-01T12:22:16+03:00"
 ORDER_BY="updated"
 LIMIT="250"
-OFFSET="0"
-ARTIFACTS_WHITELIST="<path>/<image>/<tag>/;<path>/<image>/<tag>/"
+ARTIFACTS_WHITELIST="<path>/<image>/<tag>/;<path>/<image>/<tag>/" or "*"
 ```

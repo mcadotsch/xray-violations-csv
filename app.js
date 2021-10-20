@@ -51,7 +51,7 @@ function violationRequest() {
                 console.log('<' + offset + '/' + data.length + '> request junk offset / size')
 
                 newData = data.map(function(violation) {
-                    if (violation.impacted_artifacts.some(v=> artifacts.indexOf(v.replace('art ext/','')) !== -1)){
+                    if (violation.impacted_artifacts.some(v=> artifacts.indexOf(v.replace('art ext/','')) !== -1 || artifacts=='*')){
                         return {
                             ...violation
                         }
