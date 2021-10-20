@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/mcadotsch/xray-violations-csv/issues"
   },
-  "homepage": "https://github.com/mcadotsch/xray-violations-csv#readme"
+  "homepage": "https://github.com/mcadotsch/xray-violations-csv#readme",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "json-2-csv": "^3.14.4"
+  }
 }
